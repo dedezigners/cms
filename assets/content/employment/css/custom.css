@@ -1,0 +1,153 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.section.mcb-section{
+    position: relative;
+}
+
+.section.mcb-section > .__background-gradiant {
+    background-image: linear-gradient(180deg, rgb(22, 192, 255),rgb(22, 107, 255));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39%;
+    height: 100%;
+}
+
+.mcb-section > .mcb-section-inner > .contact-sidebar{
+    /* background-image: linear-gradient(180deg, rgb(22, 192, 255),rgb(22, 107, 255)); */
+    /* height: 100%; */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.tab-pane.fade.in{
+    opacity: 1;
+}
+
+.contact-sidebar > .nav.nav-tabs{
+    display: block;
+    border: none;
+    margin-left:20px;
+    margin-right:40px;
+}
+
+.contact-sidebar > .nav.nav-tabs > h6 {
+    color: #fff;
+}
+.contact-sidebar > .nav.nav-tabs > li{
+    display: block;
+    float: none;
+    /* border: 1px solid #333; */
+}
+
+.contact-sidebar > .nav.nav-tabs > li > a::before{
+    content: 'I am a:';
+    padding-right: 10px;
+}
+
+.contact-sidebar > .nav.nav-tabs > li > a{
+    /* border: 1px solid #333; */
+    display: block;
+    background: transparent;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.contact-sidebar > .nav.nav-tabs > li > a:hover{
+    border: none;
+}
+
+.contact-sidebar > .nav.nav-tabs > li.active {
+    background-color: transparent;
+}
+
+.contact-sidebar > .nav.nav-tabs > li.active > a{
+    background-color: #0e4ab2;
+    color: #FFF;
+    border: none;
+    border-radius: 0;
+}
+
+.contact-sidebar > .nav.nav-tabs > li > a > strong{
+    font-weight: 600;
+}
+
+.looking-for-help-section{
+    color: #fff;
+    margin-top: 50px;
+}
+
+.looking-for-help-section h6{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.looking-for-help-section h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.looking-for-help-section ul{
+    margin-top: 30px;
+}
+
+.looking-for-help-section ul > li {
+    margin-bottom: 19px;
+    height: 37px;
+}
+.looking-for-help-section ul > li > a {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    /* letter-spacing: .88px; */
+    color: #fff;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.looking-for-help-section ul > li > a > svg {
+    width: 26.4px;
+    height: 29.8px;
+    display: inline-block;
+}
+
+.looking-for-help-section ul > li > a > h5 {
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* text-decoration: underline; */
+    width: 80%;
+}
+
+@media (max-width:767px) {
+    .section.mcb-section > .__background-gradiant {
+        width: 100%;
+    }
+
+    .section.mcb-section > .__contact-left-menu {
+        flex-direction: column;
+    }
+}
